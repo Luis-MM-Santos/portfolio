@@ -1,0 +1,17 @@
+#repo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #repo-list li {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  #repo-list a {
+    text-decoration: none;
+    color: #0366d6;
+  }
