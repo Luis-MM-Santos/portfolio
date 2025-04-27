@@ -1,0 +1,12 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Luis Santos Portfolio",
+    "scripts": {
+        "start": "serve -s .",
+        "stop": "kill-port 3000"
+    },
+    "dependencies": {
+        "serve": "^14.2.4"
+    }
+}

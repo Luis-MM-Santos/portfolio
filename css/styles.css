@@ -1,9 +1,12 @@
 #repo-list {
     list-style-type: none;
     padding: 0;
+    width: 100px;
+    height: 100px;
   }
 
   #repo-list li {
+    margin-top: 1em;
     margin-bottom: 1em;
     padding: 1em;
     border: 1px solid #ccc;
@@ -15,3 +18,123 @@
     text-decoration: none;
     color: #0366d6;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+}
+
+#anchors {
+    display: flex;
+    justify-content: space-evenly;
+}
+#anchors a {
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s;
+}
+#anchors a:hover {
+    background-color: #e0e0e0;
+}
+#anchors a.active {
+    background-color: #0366d6;
+    color: white;
+}
+#repo-list h2 {
+    margin: 0;
+    font-size: 1.5em;
+} 
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInMove 1s ease-out forwards;
+}
+
+@keyframes fadeInMove {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+#repo-list h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+#repo-list p {
+    margin: 0.5em 0;
+    font-size: 0.9em;
+    color: #555;
+}
+#repo-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+#repo-list .repo-item {
+    display: flex;
+    align-items: center;
+}
+#repo-list .repo-item img {
+    margin-right: 1em;
+}
+#repo-list .repo-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+#repo-list .repo-item p {
+    margin: 0.5em 0;
+    font-size: 0.9em;
+    color: #555;
+}
+#repo-list .repo-item a {
+    margin-right: 1em;
+    font-size: 0.9em;
+    color: #0366d6;
+}
+#repo-list .repo-item a:hover {
+    text-decoration: underline;
+}
+#repo-list .repo-item a:visited {
+    color: #0366d6;
+}
+#repo-list .repo-item a:active {
+    color: #0366d6;
+} 
+body {
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+  }
+
+  footer {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #f1f1f1;
+  }
+
+  .contact-form-container {
+    width: 60%;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .small-shadow {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* smaller shadow */
+}
+
+.card-body{
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
